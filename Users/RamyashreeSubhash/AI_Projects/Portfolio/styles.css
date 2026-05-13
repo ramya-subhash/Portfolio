@@ -184,4 +184,5 @@ main {
   font-size: 0.8rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
+  white-space: nowrap;
 }
