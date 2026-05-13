@@ -125,6 +125,7 @@ main {
   gap: 1.25rem;
   margin: 0;
   flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 .tools-list li {
