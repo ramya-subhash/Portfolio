@@ -72,47 +72,6 @@ main {
   border-color: var(--accent);
 }
 
-.card--light {
-  background: #eef2ff;
-  border-color: #c7d2fe;
-  color: #1e1b4b;
-}
-
-.card--light .card-title {
-  color: #1e1b4b;
-}
-
-.card--light .card-description {
-  color: #374151;
-}
-
-.card--light .card-tools {
-  background: rgba(99, 102, 241, 0.08);
-  border-top-color: #c7d2fe;
-}
-
-.card--light .tools-label {
-  color: #1e1b4b;
-}
-
-.card--light .tools-list {
-  color: #374151;
-}
-
-.card--light .card-links {
-  border-top-color: #c7d2fe;
-}
-
-.card--light .card-link,
-.card--light .tool-link {
-  color: #4338ca;
-  border-bottom-color: #4338ca;
-}
-
-.card--light:hover {
-  border-color: #6366f1;
-}
-
 .card-title {
   font-size: 1.05rem;
   font-weight: 600;
