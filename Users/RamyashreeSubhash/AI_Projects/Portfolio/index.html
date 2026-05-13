@@ -49,7 +49,7 @@
           </ul>
         </div>
         <div class="card-links">
-          <a class="card-link" href="skill.md" download>Download Skill ↗</a>
+          <a class="card-link" href="skill.txt" download>Download Skill ↗</a>
           <a class="card-link" href="https://github.com/ramya-subhash" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
@@ -60,30 +60,6 @@
   <footer class="site-footer">
     Ramya Subhash &copy; 2026
   </footer>
-
-  <script>
-    document.querySelectorAll('a[download]').forEach(link => {
-      link.addEventListener('click', async (e) => {
-        e.preventDefault();
-        const filePath = link.getAttribute('href');
-        try {
-          const response = await fetch(filePath);
-          const blob = await response.blob();
-          const url = window.URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = filePath.split('/').pop();
-          document.body.appendChild(a);
-          a.click();
-          window.URL.revokeObjectURL(url);
-          a.remove();
-        } catch (error) {
-          console.error('Download failed:', error);
-          window.location.href = filePath;
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>
